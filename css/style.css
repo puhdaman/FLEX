@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');  
+
+* {
+    margin: 0; /*Ликвидация отступов*/
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /*Оставляю только внутреннее содержимое*/    
+}
+
+body {
+    background: #9A1212; /*Цвет фона*/
+    font-family: 'Jost'; /*Выбор шрифта*/
+}
+
+.conteiner-1 {
+    position: relative; 
+    height: 100%;
+    width: 100%;
+}
+
+.fon{
+    width: 50%;
+    height:5%;
+    position: absolute;
+}
+
+.content_str1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 50%;
+    min-width: 50%;
+    
+}
+
+ul.knopka {
+    margin: 68px 100px; /*  значение отступов */
+    padding: 4px; /* Значение полей */
+}
+
+
+ul.knopka li {
+    display: inline-block; /* Отображать горизонтально */
+}
+
+.knopka {
+    display: flex;
+    margin: 0 122px;
+    list-style-type: none;
+}
+
+.knopka li{
+    margin: 0 25px;
+}
+
+.button {
+    display: flex;
+    justify-content: center; /*выравнивание вдоль главной оси*/
+    align-items: center;
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    background: white;
+    text-align: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+
+.content_str1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 50%;
+    min-width: 50%;
+}
+
+.text_1 {
+   
+    margin-right: 50px;
+}
+.logotext {
+    color: white;
+    text-align: right;
+    font-size: 64px;
+    margin-top: 40x;
+    
+}
+.text span {
+    font-size: 96px;
+}
+.text_2 {
+    
+    display: block;
+    width: 500px; /*Ширина текста*/
+    color: white;
+    font-size: 18px;
+    line-height: 30px; /*Расстояние между строками*/
+    text-align: right; /*позиционирование текста*/
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.dop {
+    margin: 70px;
+}
+
+.logotext {
+    font-size: 95px;
+}
+
+
+
+.conteiner-2 {
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content:flex-start;
+}
+
+/*.conteiner_2 {
+    max-width: 1500px;
+    display: flex;
+}*/
+
+#products {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.product {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#news h1 {    
+    font-size: 96px;
+    letter-spacing: 35px;  /*между буквами расстояние*/
+    margin: 25px;
+}
+
+.new1 {
+    
+    background: url('../img/new1.png');
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 133px;
+    height: 220px;
+    border-radius: 45px;
+    margin-left: 24px;
+}
+
+.new2 {
+    background: url('../img/new2.png');
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 133px;
+    height: 220px;
+    border-radius: 45px;
+    margin-left: 24px;
+}
+
+.new3 {
+    background: url('../img/new3.png');
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 133px;
+    height: 220px;
+    border-radius: 45px;
+    margin-left: 24px;
+}
+
+.podpis {
+    font-size: 30px;
+    text-align: center;
+}
+
+.podpis a {
+    text-decoration: none;
+    color: #9A1212;
+}
+
+.podfon {
+    position: absolute;
+    width: 116px;
+    height: 220px;
+    background: #C4C4C4;
+    border-radius: 34px;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-left {
+    margin-top: -60px;
+   margin-right: 35px;
+   position: relative;
+   width: 30px;
+   height: 30px;
+   transition: opacity .3s, transform .3s;
+}
+
+.s-left:hover {
+  
+   transform: scale(1.2);
+}
+
+.s-left div {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   border-left: solid #9A1212 7px;
+   border-bottom: solid #9A1212 7px;
+   transform: rotate(45deg);
+}
+
+.s-left div:nth-child(1) {
+   left: 50%;
+}
+
+.s-right {
+    margin-top: -60px;
+   position: relative;
+   width: 30px;
+   height: 30px;
+   transition: opacity .3s, transform .3s;
+   z-index: 2;
+}
+
+.s-right:hover {
+  
+   transform: scale(1.2);
+}
+
+.s-right div {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   border-right: solid #9A1212 7px;
+   border-bottom: solid #9A1212 7px;
+   transform: rotate(-45deg);
+}
+
+.s-right div:nth-child(1) {
+   left: 50%;
+}
+
+.product:hover{
+    transform: scale(1.2);
+}
+.product:active {
+    transform: scale(0.9);
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    align-items: center;  
+    height: 100px;
+    width: 100%;    
+    background-color: #F3F3F3;
+    bottom: 0;
+}
+
+.footer-text {
+    position: relative;
+    font-size: 24px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.list1{
+    position: absolute;
+    width: 35vw;
+    height: 85vh;
+    right: 300px;
+    top: 180px;
+}
+
+.list2 {
+    position: absolute;
+    width: 150px;
+    height: 190px;
+    left:25px;
+    top: 300px;
+}
+
+.list3 {
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+    width: auto;
+    height: 100vh;
+    z-index: 1;
+}
