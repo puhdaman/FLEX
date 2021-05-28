@@ -75,6 +75,18 @@ ul.knopka li {
     font-size: 18px;
 }
 
+.button:hover {
+    
+    transform: scale(1.2);
+}
+.button:active {
+    transform: scale(0.9);
+    opacity: .8;
+}
+.button a:hover {
+    color: #9A1212;
+}
+
 
 .content_str1 {
     position: relative;
