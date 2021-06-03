@@ -103,9 +103,7 @@ ul li {
     margin-top: 40px;
     margin-right: 400px;
 }
-.name {
-    font-size: 36px;
-}
+
 
 .block {
     width: 772px;
@@ -124,6 +122,9 @@ height: 360px;
     color: #FFFFFF;
 }
 
+.name {
+    font-size: 36px;
+}
 .image {
     position: absolute;
     background: url('../img/new2.png');

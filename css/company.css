@@ -134,12 +134,12 @@ ul li {
     
 }
 .footer-s {    
-width: 84px;
-height: 56px;
-left: 21px;
-margin-left: 40px;
-background: #FFFFFF;
-border-radius: 20px;
+    width: 84px;
+    height: 56px;
+    left: 21px;
+    margin-left: 40px;
+    background: #FFFFFF;
+    border-radius: 20px;
 }
 
 .footer-s:hover {
