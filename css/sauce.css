@@ -1,299 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+.back {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    width: 65px;
+    height: 65px;
+    margin-left: 15px;
+    z-index: 99;
 }
-body, html {
+.back a {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;    
-}
-
-body {
-     background: white;
-    font-family: 'Jost';
-}
-
-.logo {
-    left: 50px;
-    position: relative;
-}
-
-.logo:hover{
-    transform: scale(1.2);
-}
-
-.logo img {
-    position: absolute;
-    margin-top: -20px;
-}
-
-.conteiner-1 {
-    position: relative;    
-    width: 100%;
-}
-
-.conteiner_1 {
-    position: relative;   
-    margin-top: 26px;      
-}
-
-ul li { 
-    display:inline-block;
-}
-
-.content_str1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    min-height: 50%;
-    min-width: 50%;
-    margin-top: -50px;
-}
-
-.knopka {
-    display: flex;
-    margin: 0 122px;
-    list-style-type: none;
-}
-
-.knopka li {
-    margin: 0 25px;
-}
-
-.button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    width: 150px;
-    height: 45px;
-    border-radius: 25px;
-    background:#F3F3F3;
+}
+.arrow_white {
+    display: none;
+}
+.back:hover{
+    background: #9A1212;
+    transform: scale(1.05);
+}
+.back:hover .arrow_white {
+    display: block;
+}
+.back:hover .arrow_red {
+    display: none;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    padding-bottom: 0;
+}
+.btn {
+    position: relative;
+    background: #F3F3F3;
+}
+.content {
+    position: relative;
+    align-self: center;
+    z-index: 66;
+}
+.prod-title {
+    font-size: 30px;
     text-align: center;
 }
-
-.button:hover {
-    
-    transform: scale(1.2);
-}
-.button:active {
-    transform: scale(0.9);
-    opacity: .8;
-}
-.button a {
-    margin-top: -2px;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-.button a:hover {
-    color: #9A1212;
-}
-
-
-.content_str2 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: 40px;
-    margin-right: 400px;
-}
-
-
-.block {
-    width: 772px;
-height: 360px;
+.info {
+    width: 90vh;
+    height: 50vh;
     background: #9A1212;
-    border-radius: 60px;
-    margin-left: -50px;
-    margin-top: 5px;
-}
-
-.sostav {
-   padding: 30px 157px 19px 33px;   
-    font-size: 32px;
-    line-height: 46px;
-    text-align: right;
-    color: #FFFFFF;
-}
-
-.name {
-    font-size: 36px;
-}
-.image {
-    position: absolute;
-    background: url('../img/new2.png');
-    width: 255px;
-    height: 90%;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 82px;
-    margin-left: 650px;
-    margin-top: -330px;
-}
-.footer {
+    border-radius: 40px;
+    align-self: center;
     display: flex;
-    align-items:center;
-    margin-top: 85px;
-    height: 100px;
-    width: 100%;
-    background-color: #F3F3F3;
-    
-}
-.footer-s {
-    
-    width: 84px;
-    height: 56px;
-    left: 21px;
-    margin-left: 40px;
-    background: #FFFFFF;
-    border-radius: 20px;
-}
-.footer-s:hover {
-    transform: scale(1.2);
+    justify-content: space-between;
 }
 
-
-.s-left {
-    margin-top: 12px;
-    margin-left: 25px;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    transition: opacity .3s, transform .3s;
+.info p {
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    text-align: right;
 }
-
-.s-left:hover {
-    opacity: .8;
-    transform: scale(1.2);
+.tomat {
+    height: 100%;
+    margin-right: -3px;
+    border-radius: 40px;
+    min-width: 270px;
 }
-
-.s-left div {
+.vetka-product {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    border-left: solid #9A1212 7px;
-    border-bottom: solid #9A1212 7px;
-    transform: rotate(45deg);
-}
-.s-left div:nth-child(1) {
-    left: 50%;
-}
-.list4 {
-    position: absolute;
-    width: 300px;
-    height: 350px;
+    z-index: 1;
     right: 0;
-    bottom: 0;    
-    z-index: 0;
+    bottom: 70px;
 }
-
-
-
-
-@media (max-width:1200px){
-    .list4 {
-       transform: scale(0.8);
-       right: -50px;
-    }
-    .content_str2 {
-         transform: scale(0.9);
-         margin-left: 500px;
-    }
-}
-@media (max-width:992px){
-    .content_str2 {
-        margin-right: 150px;
-        
-    }
-    .name {
-        margin-left: 550px;
-    }
-    .sostav {
-        margin-left: 20px;
-    }
-    .block {
-        width: 700px;
-        height: 380px;
-        margin-left: 500px;
-    }
-    .image {
-        margin-top: -370px;
-        margin-left: 600px;
-    }
-    .list4 {
-        margin-bottom: -70px; 
-    }
-    .footer {
-       margin-top: 50px;
-    }
-    
-}
-@media screen and (max-width: 769px) {
-    .sostav {
-        margin-left: 10px;
-        font-size: 20px;
-        width: 300px;
-    }
-    .block {
-        width: 500px;
-        height: 300px;
-    }
-
-    .image {
-        width: 200px;
-        margin-left: 400px;
-    }
-    .logo {
-        transform: scale(0.8);
-        margin-top: -20px;
-    }
-    .knopka {
-        margin-top: 35px;
+@media screen and (min-width: 1000px) and (max-height: 1050px) and (max-width: 1100px) {
+    .info {
+        width: 60vh;
+        height: 50vh;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .logo {
-        margin-left: 150px;
+@media screen and (max-height: 800px){
+    .tomat {
+        min-width: 200px;
     }
-    .knopka li{
-        margin: 0 10px;
+    .info p {
+        font-size: 23px;
     }
-    .knopka {
-        margin-right: 10px;
-    }
-    .content_str2 {
-        display: flex;
+}
+
+@media screen and (max-width: 800px){
+    header {
+        flex-direction: column;
         align-items: center;
+        padding: 0;
     }
-     .sostav {
-        margin-left: 10px;
+}
+
+@media screen and (max-width: 700px){
+    .info {
+        width: 90vw;
+        height: 40vh;
+    }
+    .info p {
         font-size: 20px;
-        width: 300px;
     }
-    .content_str2 {
-        transform: scale(0.8);
-        margin-right: -30px;
+    .prod-title {
+        font-size: 25px;
     }
-    .block {
-        width: 500px;
-        height: 300px;
+    .tomat {
+        min-width: 160px;
     }
-
-    .image {
-        width: 200px;
-        margin-left: 370px;
-        height: 300px;
+}
+@media screen and (max-width: 500px) {
+    .info p {
+        font-size: 13.5px;
+        padding:10px;
     }
-
-    .list4 {
-        display: none;
-    }
-
 }

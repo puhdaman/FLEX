@@ -1,438 +1,486 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
-    margin: 0; /*Ликвидация отступов*/
+    margin: 0;
     padding: 0;
-}
-body, html {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden; /*Оставляю только внутреннее содержимое*/    
+    font-family: 'Jost';
+    box-sizing: border-box;
 }
 
-body {
-    background: #9A1212; /*Цвет фона*/
-    font-family: 'Jost'; /*Выбор шрифта*/
-}
-
-.conteiner-1 {
-    position: relative; 
-    height: 100%;
-    width: 100%;
-}
-
-.fon{
-    width: 50%;
-    height:5%;
-    position: absolute;
-}
-
-.content_str1 {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: flex-end;
-    min-height: 50%;
-    min-width: 50%;
-    
-}
-
-ul.knopka {
-    margin: 68px 100px; /*  значение отступов */
-    padding: 4px; /* Значение полей */
-}
-
-
-ul.knopka li {
-    display: inline-block; /* Отображать горизонтально */
-}
-
-.knopka {
-    display: flex;
-    margin: 0 122px;
+ul {
     list-style-type: none;
 }
 
-.knopka li{
-    margin: 0 25px;
+.wrapper-110 {
+    height: 110vh;
 }
 
-.button {
+.wrapper {
+    height: 100vh;
+    position: relative;
     display: flex;
-    justify-content: center; /*выравнивание вдоль главной оси*/
-    align-items: center;
-    font-size: 18px;
-    width: 150px;
-    height: 45px;
-    border-radius: 25px;
-    background: white;
-    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.button a {
+.wrapper-90 {
+    height: 90vh;
+}
+
+
+.red {
+    background: #9A1212;
+}
+
+.logo {
+    align-self: flex-start;
+    position: absolute;
+    height: 70vh;
+    width: 70vh;
+    background: white;
+    border-radius: 0px 50% 50% 50%;
+    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_kepchup {
+    height: 55%;
+}
+.logo_dkp {
+    height: 17%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.vetochka-1 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    height: 40%;
+}
+
+.p60 {
+    padding: 60px;
+}
+
+.f-end {
+    align-items: flex-end;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    z-index: 77;
+}
+
+.btn {
+    background: white;
+    height: 48px;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: transform .15s;
+    z-index: 90;
+}
+
+.btn a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
-}
-
-.button:hover {
-    
-    transform: scale(1.2);
-}
-.button:active {
-    transform: scale(0.9);
-    opacity: .8;
-}
-.button a:hover {
-    color: #9A1212;
-}
-
-
-.content_str1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    min-height: 50%;
-    min-width: 50%;
-}
-
-.text_1 {
-   
-    margin-right: 50px;
-}
-.logotext {
-    color: white;
-    text-align: right;
-    font-size: 64px;
-    margin-top: 40x;
-    
-}
-.text span {
-    font-size: 96px;
-}
-.text_2 {
-    
-    display: block;
-    width: 500px; /*Ширина текста*/
-    color: white;
-    font-size: 18px;
-    line-height: 30px; /*Расстояние между строками*/
-    text-align: right; /*позиционирование текста*/
-    margin-left: 300px;
-    margin-top: 30px;
-}
-
-
-
-.logotext {
-    font-size: 95px;
-}
-
-
-.dop {
-    margin: 70px;
-}
-.conteiner-2 {
-    position: relative; 
     height: 100%;
     width: 100%;
-    background: white;
     display: flex;
-    justify-content:flex-start;
-}
-
-
-
-#news h1 {    
-    font-size: 96px;
-    letter-spacing: 35px;  /*между буквами расстояние*/
-    margin: 25px;
-}
-
-.new1 {
-    
-    background: url('../img/new1.png');
-    position: relative;
-    background-size: cover;
-    background-position: center center;
-    width: 133px;
-    height: 220px;
-    border-radius: 45px;
-    margin-left: 24px;
-}
-
-.new2 {
-    background: url('../img/new2.png');
-    position: relative;
-    background-size: cover;
-    background-position: center center;
-    width: 133px;
-    height: 220px;
-    border-radius: 45px;
-    margin-left: 24px;
-}
-
-.new3 {
-    background: url('../img/new3.png');
-    position: relative;
-    background-size: cover;
-    background-position: center center;
-    width: 133px;
-    height: 220px;
-    border-radius: 45px;
-    margin-left: 24px;
-}
-
-.podpis {
-    font-size: 30px;
-    text-align: center;
-}
-
-.podpis a {
-    text-decoration: none;
-    color: #9A1212;
-}
-
-#products {
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-}
-
-.product {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.podfon {
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:hover a {
+    font-weight: bold;
+    color: rgb(23, 201, 38);
+}
+
+.btn:hover::before {
+    background: rgb(23, 201, 38);
+    content: "";
+    display: block;
     position: absolute;
-    width: 116px;
-    height: 220px;
-    background: #C4C4C4;
-    border-radius: 34px;
+    height: 5px;
+    width: 150px;
+    bottom: -10px;
+    left: 2px;
 }
 
-#news {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.menu_icon {
+    height: 3px;
+    width: 15px;
+    background: black;
+    margin-left: 5px;
 }
 
-.s-left {
-    margin-top: -60px;
-   margin-right: 35px;
-   position: relative;
-   width: 30px;
-   height: 30px;
-   transition: opacity .3s, transform .3s;
+.menu_icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: black;
+    height: 3px;
+    width: 15px;
+    top: 35%;
+}
+.menu_icon::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: black;
+    height: 3px;
+    width: 15px;
+    bottom: 34%;
 }
 
-.s-left:hover {
-  
-   transform: scale(1.2);
+.btn:hover .menu_icon, .btn:hover .menu_icon::after, .btn:hover .menu_icon::before {
+    background: rgb(23, 201, 38);
 }
 
-.s-left div {
-   position: absolute;
-   width: 30px;
-   height: 30px;
-   border-left: solid #9A1212 7px;
-   border-bottom: solid #9A1212 7px;
-   transform: rotate(45deg);
+.btn-2 {
+    margin: 0 5vw;
 }
 
-.s-left div:nth-child(1) {
-   left: 50%;
+
+
+.title, .description {
+    position: relative;
+    color: white;
+    max-width: 50%;
+    font-size: 26px;
+    text-align: right;
+    z-index: 77;
 }
 
-.s-right {
-    margin-top: -60px;
-   position: relative;
-   width: 30px;
-   height: 30px;
-   transition: opacity .3s, transform .3s;
-   z-index: 2;
+.title {
+    font-size: 90px;
+    
 }
 
-.s-right:hover {
-  
-   transform: scale(1.2);
+.title span {
+    font-size: 130px;
 }
 
-.s-right div {
-   position: absolute;
-   width: 30px;
-   height: 30px;
-   border-right: solid #9A1212 7px;
-   border-bottom: solid #9A1212 7px;
-   transform: rotate(-45deg);
+.vetochka-mainpage-1 {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    height: 86vh;
+    z-index: 2;
 }
-
-.s-right div:nth-child(1) {
-   left: 50%;
-}
-
-.product:hover{
-    transform: scale(1.2);
-}
-.product:active {
-    transform: scale(0.9);
+.dkp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    background: url("../img/dkp.png");
+    background-size: contain;
+    background-repeat: repeat-x;
 }
 
 .footer {
-    position: absolute;
+    height: 99px;
+    width: 100%;
+    background: #F3F3F3;
     display: flex;
-    align-items: center;  
-    height: 100px;
-    width: 100%;    
-    background-color: #F3F3F3;
-    bottom: 0;
+    align-items: center;
+    padding: 10px;
+    font-size: 19px;
 }
 
-.footer-text {
+.new {
+    font-size: calc(30px + 40 * ((100vw - 320px) / (1280 - 320)));
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+.slider-small {
     position: relative;
-    font-size: 24px;
+    z-index: 88;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-small > img {
+    height: 80px;
+    margin: 0 80px;
+    justify-self: center;
+    z-index: 88;
+}
+
+.slider-small > img:hover {
+    transform: scale(1.2);
+    transition: transform .1s;
+}
+
+.product {
+    position: relative;
+    height: 38vh;
+    width: 30vh;
+    min-height: 220px;
+    min-width: 145px;
+    background-color: #C4C4C4;
+    border-radius: 40px;
+    transition: transform .3s, background .5s;
+}
+
+.product a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product p {
+    position: relative;
+    bottom: -5px;
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 25px;
+    color: #9A1212;
+    z-index: 888;
+    transition: opacity .3s;
+    /* text-shadow: white 0 0 2px; */
+    text-shadow: 1px 0 1px #fff, 
+                 0 1px 1px #fff, 
+                 -1px 0 1px #fff, 
+                 0 -1px 1px #fff;
+}
+
+.p-s {
+    margin: 0 7vw;
+}
+
+.product *:not(.vetochka-tovar) {
+    z-index: 10;
+}
+
+.prod-img {
+    height: 100%;
+    min-height: 220px;
+    min-width: 125px;
+    border-radius: 40px;
+    margin-right: -2px;
     margin-left: 20px;
-    z-index: 2;
 }
 
-.list1{
-    position: absolute;
-    width: 35vw;
-    height: 85vh;
-    right: 300px;
-    top: 180px;
+.product:hover {
+    background: #9A1212;
+    transform: translateY(-15px);
 }
 
-.list2 {
+.vetochka-tovar {
+    opacity: 0;
     position: absolute;
-    width: 150px;
-    height: 190px;
-    left:25px;
-    top: 300px;
+    right: -128px;
+    bottom: -100px;
+    z-index: 6;
+    transition: opacity .3s;
 }
 
-.list3 {
+.product:hover .vetochka-tovar {
+    opacity: 1;
+}
+
+.product:hover p {
+    opacity: 0;
+}
+
+.vetochka-mainpage-2 {
     position: absolute;
-    right: 150px;
-    bottom: 0;
-    width: auto;
     height: 100vh;
+    bottom: 0;
+    right: 16%;
     z-index: 1;
 }
 
+.footer p {
+    position: relative;
+    z-index: 88;
+}
 
+.vetochka-dop-1, .vetochka-dop-2 {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.vetochka-dop-1 {
+    right: 0;
+    top: 25%;
+    height: 40vh;
+}
 
+.vetochka-dop-2 {
+    left: 0;
+    bottom: -60px;
+}
 
-@media(max-width:479px) {
-    .knopka {
-        transform: scale(0.7);
-        margin-left: -300px;
-    }
-    .knopka li {
-    margin: 0 16px;
-    }
-    .text_1 {
-        text-align: center;
-         margin-left: -350px;
-    }
-    .text {
-        font-size: 44px;
-    margin-top: 28px;
-    }
-    .text_2 {
-    display: block;
-    width: 300px;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 19px;
-    }
-
-    .dop {
-        margin-left: -350px;
-    }
-
-    .list1 {
-       display: none
+@media screen and (max-width: 1300px){
+    .title {
+        font-size: 70px;
     }
     
-    .pro2 {
-        display: none;
+    .title span {
+        font-size: 110px;
     }
-
-    #news h1 {
-    margin-left:50px;;
-    font-size: 36px;
-    letter-spacing: 15px;
-    margin-bottom: 20px;
+    .description {
+        font-size: 20px;
     }
-    .s-left {
-        left: 10px;
+    .new {
+        margin-left: 0;
+        align-self: center;
+    }
+    .slider-small {
+        width: 100%;
+        justify-content: space-between;
     }
     .product {
-        margin-left: -30px;
+        width: 26vh;
     }
-    .s-right {
-        margin-left: -20px;
+    .slider-small > img {
+        margin: 0 20px;
+    }
+    .btn {
+        height: 36px;
+        width: 125px;
+    }
+    .btn:hover::before {
+        width: 130px;
+        height: 4px;
     }
 }
-@media(max-width:280px) {
-   
-    .knopka {             
-        transform: scale(0.6);
-        margin-left: -330px;
+@media screen and (max-height: 750px){
+    .product p {
+        font-size: 20px;
     }
-    .knopka li{
-    margin: 0 12px;
-    }
-    .text_1 {
-        text-align: center;
-         margin-left: -350px;
-    }
-    .logotext {
-    font-size: 20px;
-    margin-top: 28px;
-    margin-left: -20px;
-    }
-    .logotext span{
-        font-size: 76px;
-    }
-    .text_2 {        
-    width: 190px;
-    color: white;
-    font-size: 18px;
-    text-align: justify;
-    margin-top: 19px;
-    }
-    .dop {
-        margin-top: 10px;
-        margin-left: -350px;
-        transform: scale(0.990);
-    }
+}
 
+@media screen and (max-width: 1050px) {
+    .title {
+        font-size: 60px;
+    }
     
-     #news h1{
-        margin-left:50px;;
-    font-size: 36px;
-    letter-spacing: 15px;
-    margin-bottom: 20px;
+    .title span {
+        font-size: 90px;
     }
-    .s-left{
-        left: 20px;
+    .description {
+        font-size: 15px;
     }
-    .product{
-        
-        transform: scale(0.999);
+    .btn {
+        font-size: 16px;
     }
-    .s-right{
-        margin-left: -10px;
+    .product p {
+        font-size: 16px;
     }
-    .footer_text{
-        font-size: 14px;
+    .footer {
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-height: 750px) {
+    .slider-small {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .slider-small {
+        justify-content: space-around;
+    }
+    .s-3 {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .f-end {
+        align-items: center;
+    }
+    .title, .description{
+        min-width: 90%;
+        text-align: center;
+    }
+    .p60 {
+        padding: 30px;
+    }
+    .vetochka-mainpage-1, .vetochka-mainpage-2 {
+        display: none;
+    }
+    .vetochka-dop-1, .vetochka-dop-2 {
+        display: block;
+    }
+    .slider-small > img {
+        height: 60px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .s-2 {
+        display: none;
+    }
+    .footer {
+        font-size: 16px;
+    }
+    .new {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 50px;
+        width: 100%;
+    }
+    
+    .title span {
+        font-size: 70px;
+    }
+    .description {
+        font-size: 15px;
+    }
+    .product p {
+        font-size: 15px;
+    }
+    .btn {
+        height: 32px;
+        width: 100px;
+    }
+    .btn:hover::before {
+        width: 100px;
+        height: 3px;
+        bottom: -7px;
+    }
+    .btn-2 {
+        margin: 0 15px;
+    }
+    .menu_icon::after {
+        top: 30%;
+    }
+    .menu_icon::before {
+        bottom: 29%;
+    }
+    .p60 {
+        padding: 30px 0;
+    }
+    .vetochka-tovar {
+        display: none
+    };
+}
+
+@media screen and (max-width: 370px) {
+    .title {
+        font-size: 45px;
     }
 }
